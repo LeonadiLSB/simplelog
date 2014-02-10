@@ -17,20 +17,20 @@ var createTimestamp = function(level) {
     }
     var timestamp = new Date(Date.now());
     return '[ ' + colorLevel + ' | ' + timestamp.toLocaleTimeString() + ' ] ';
-}
+};
 
 exports.debug = function(object) {
     console.log(createTimestamp('debug') + object);
-}
+};
 
 exports.info = function(object) {
     console.log(createTimestamp('info') + object);
-}
+};
 
 exports.warn = function(object) {
     console.log(createTimestamp('warn') + object);
-}
+};
 
 exports.error = function(object) {
     console.log(createTimestamp('error') + object);
-}
+};
