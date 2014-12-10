@@ -6,7 +6,7 @@ Supports colors and different log levels.
 ## Usage
 
 ```javascript
-global.logger = require("simplelog");
+var logger = require("simplelog");
 ...
-global.logger.info("Message"); // debug|info|warn|error
+logger.info("Message"); // debug|info|warn|error
 ```
